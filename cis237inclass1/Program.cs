@@ -11,7 +11,9 @@ namespace cis237inclass1
         static void Main(string[] args)
         {
             //Make a new instance of the user interface class
-            UserInterface ui = new UserInterface();
+            //Just commented this to use the static one instead
+            //UserInterface ui = new UserInterface();
+
 
 
             //Here is a new employying being created using the default 
@@ -41,7 +43,7 @@ namespace cis237inclass1
             csvProcessor.ImportCsv(pathToCsv, employees);
 
             //Get some input from the user
-            int choice = ui.GetUserInput();
+            int choice = StaticUserInterface.GetUserInput();
 
             //While the chouse they slected is not 2, continue to do work
             while (choice != 2)
@@ -65,11 +67,11 @@ namespace cis237inclass1
                     }
 
                     //Use the US class to print out the string
-                    ui.Output(outputString);
+                    StaticUserInterface.Output(outputString);
                 }
 
                 //re-prompt te user for input
-                choice = ui.GetUserInput();
+                choice = StaticUserInterface.GetUserInput();
             }
         }
     }
