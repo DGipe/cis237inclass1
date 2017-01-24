@@ -11,7 +11,7 @@ namespace cis237inclass1
         //No Variables
         //No Properties
         //No Construcors (but we could if we needed to)
-
+        
         //*****************************
         //Methods
         //*****************************
